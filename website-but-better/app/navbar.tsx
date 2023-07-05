@@ -8,7 +8,7 @@ function handleClick()
 function handleSumit() {
   useEffect(
     () => {
-  window.location.assign(('http://www.google.com/search?q=site:yourdomainname ') + (document.getElementById("searchBox") as HTMLInputElement).value)
+  window.location.assign(('http://www.google.com/search?q=site:nextjs-1-k0lnubk70-deebareshii81-gmailcom.vercel.app ') + (document.getElementById("searchBox") as HTMLInputElement).value)
   });
   return false;
 }
