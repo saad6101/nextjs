@@ -1,4 +1,5 @@
 "use client"
+import Script from "next/script";
 import Link from "next/link"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { createRef, useEffect, useRef } from "react";
@@ -37,7 +38,9 @@ function NavBar()
   <Link href="/Magazine" className="nav-item nav-link"> School Magazine  </Link>
   <Link href="/Activities" className="nav-item nav-link"> Activites </Link>
   <Link href="/Downloads" className="nav-item nav-link ">Downloads </Link>
-  <form className="" onSubmit={handleSumit}>
+  <Script async src="https://cse.google.com/cse.js?cx=d06b67fe533084f6b">
+</Script>
+<div className="gcse-search-results-only">
             <input
             id="searchBox"
               type="search"
@@ -45,7 +48,7 @@ function NavBar()
               placeholder="Search..."
               aria-label="Search"
             />
-          </form>
+            </div>
 
          <div className="text-right">
             <button type="button" className="btn btn-outline-light me-auto pr-4"  >
