@@ -6,9 +6,10 @@ import {useState} from 'react';
 function handleClick()
 {}
 function handleSumit() {
-  useEffect(() => {
-  window.location = 'http://www.google.com/search?q=site:yourdomainname ' && document?.getElementById("searchBox")?.value;
-  })
+  useEffect(
+    () => {
+  window.location.assign(('http://www.google.com/search?q=site:yourdomainname ') + (document.getElementById("searchBox") as HTMLInputElement).value)
+  });
   return false;
 }
 function NavBar()
@@ -36,7 +37,7 @@ function NavBar()
   <Link href="/Magazine" className="nav-item nav-link"> School Magazine  </Link>
   <Link href="/Activities" className="nav-item nav-link"> Activites </Link>
   <Link href="/Downloads" className="nav-item nav-link ">Downloads </Link>
-  <form className="" onSubmit={home}>
+  <form className="" onSubmit={handleSumit}>
             <input
             id="searchBox"
               type="search"
