@@ -1,6 +1,6 @@
 "use client";
 export function LogInButton() {
-  return <button type="button" className="btn btn-outline-light ml-lg   bg-dark mr-sm">
+  return <button type="button" className="btn btn-outline-light ml-lg   bg-dark mr-sm" formAction="/Login">
     Login
   </button>;
 }
