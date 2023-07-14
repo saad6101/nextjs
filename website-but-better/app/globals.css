@@ -7,7 +7,7 @@
 }
 body
 {
-    background:white;
+    background:green !important;
     width: 100%;
 }
 html
@@ -15,10 +15,23 @@ html
     height: 100%;
     width:100%
 }
+.Dimensions
+{
+    height:500px;
+    width:400px;
+}
 .h-4 {
     height: 2rem/* 16px */;
     padding-right: 1px;
 }
 .w-4 {
     padding-right: 1px;
+}
+#texthello:has(.active1:target) .word:not(.active1:target)
+{
+    opacity: 0.1;
+}
+#texthello:has(.active1:target) .active1:target()
+{
+    opacity: -0.9;
 }
