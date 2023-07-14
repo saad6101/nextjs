@@ -2,7 +2,8 @@ export  default function Contatc()
 {
     return(
         <>
-        <div></div>
+        <div> You're Logged In
+        </div>
         </>
     )
 }
